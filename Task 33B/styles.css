@@ -1,0 +1,79 @@
+/* Root Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  color: #fff;
+  background-color: #111;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header with Linear Gradient */
+.gradient-header {
+  padding: 50px 20px;
+  background: linear-gradient(to right, #1e88e5, #42a5f5, #64b5f6);
+  border-radius: 10px;
+  margin-bottom: 40px;
+}
+
+/* Cards Section */
+.gradient-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 20px;
+}
+
+.card {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(135deg, #ff6f61, #ffb74d);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: transform 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* Radial Gradient */
+.radial {
+  background: radial-gradient(circle, #ab47bc, #8e24aa);
+}
+
+/* Conic Gradient */
+.conic {
+  background: conic-gradient(from 90deg, #4caf50, #8bc34a, #cddc39, #4caf50);
+}
+
+/* Footer with Gradient Button */
+.footer-gradient {
+  margin-top: 60px;
+}
+
+.gradient-btn {
+  padding: 15px 30px;
+  font-size: 1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  background: linear-gradient(to right, #ff4081, #f50057);
+  transition: background 0.3s, transform 0.2s;
+}
+
+.gradient-btn:hover {
+  background: linear-gradient(to right, #f50057, #ff4081);
+  transform: scale(1.1);
+}

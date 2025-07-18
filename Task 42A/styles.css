@@ -1,0 +1,121 @@
+/* Overall page styling */
+body {
+  max-width: 90%; /* Keeps the content from stretching too wide on large screens */
+  margin: 0 auto; /* Centers the content horizontally */
+}
+
+/.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+
+/* Individual image wrapper */
+.item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+//* Responsive image styling */
+img {
+  max-width: 100%;         /* Allows the image to scale down */
+  height: auto;            /* Maintains aspect ratio */
+  object-fit: cover;       /* Ensures the image covers the box neatly */
+  border-radius: 8px;      /* Optional: adds rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Optional: subtle shadow */
+}
+
+
+
+/* Media Query for screen width 1240px and below */
+@media (max-width: 1240px) {
+  img {
+    width: 500px;
+    height: 400px;
+  }
+
+  body {
+    background-color: green; /* Background changes for visual testing */
+    color: white;
+  }
+
+  h1 {
+    font-family: "Courier New", monospace; /* Changes heading font */
+  }
+}
+
+/* Media Query for screen width 1050px and below */
+@media (max-width: 1050px) {
+  img {
+    width: 400px;
+    height: 350px;
+  }
+
+  .container {
+    flex-direction: column; /* Stacks images vertically */
+  }
+
+  body {
+    background-color: red; /* Another background change for testing */
+  }
+
+  h1 {
+    font-family: "Franklin Gothic Medium", sans-serif;
+    font-size: 1.5rem;
+  }
+}
+
+/* Media Query for screen width 880px and below */
+@media (max-width: 880px) {
+  img {
+    width: 300px;
+    height: 250px;
+  }
+
+  body {
+    color: green; /* Changes text color */
+    font-family: "Lucida Sans", Verdana, sans-serif;
+  }
+}
+
+/* Media Query for screen width 680px and below */
+@media (max-width: 680px) {
+  img {
+    width: 250px;
+    height: 200px;
+  }
+
+  body {
+    background: rgb(31, 31, 2); /* Dark background */
+  }
+
+  h1 {
+    font-size: 1rem; /* Smaller heading */
+    text-decoration: underline;
+    transition: all 0.5s ease-in-out;
+  }
+
+  h1:hover {
+    color: white; /* Color change on hover */
+  }
+}
+
+/* Media Query for very small screens (380px and below) */
+@media (max-width: 380px) {
+  img {
+    width: 150px;
+    height: 100px;
+  }
+
+  .container {
+    flex-direction: row; /* Reverts to horizontal layout */
+    flex-wrap: wrap;
+  }
+}

@@ -1,0 +1,78 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 30px;
+  width: 300px;
+  text-align: center;
+  position: relative;
+  transition: box-shadow 0.3s ease;
+}
+
+/* Pseudo-class: Hover adds shadow */
+.profile-card:hover {
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+/* Profile Image */
+.profile-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: opacity 0.3s, border 0.3s;
+  position: relative;
+}
+
+/* Pseudo-class: Hover image gets border */
+.profile-img:hover {
+  border: 3px solid #1e88e5;
+  opacity: 0.7;
+}
+
+/* Pseudo-element: Verified badge */
+.profile-img::after {
+  content: "✔ Verified";
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #4caf50;
+  color: #fff;
+  font-size: 10px;
+  padding: 2px 6px;
+  border-radius: 12px;
+  font-weight: bold;
+}
+
+/* Fade-in effect using opacity */
+.username {
+  opacity: 0;
+  animation: fadeIn 1.2s ease forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+/* Bio with reduced opacity */
+.bio {
+  color: #666;
+  font-size: 14px;
+  margin-top: 10px;
+  opacity: 0.6;
+}
+
+/* Bonus: If you had multiple cards */
+.profile-card:first-child {
+  border: 2px solid #1e88e5;
+}

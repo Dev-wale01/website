@@ -1,0 +1,56 @@
+/* ======== Global styles ======== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and text color */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #eaf4fc; /* Light blue background */
+  color: #1f1f1f; /* Dark text color for good contrast */
+  line-height: 1.6;
+}
+
+/* ======== Header with background image ======== */
+header {
+  background-image: url("images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+/* ======== Section spacing ======== */
+section {
+  padding: 40px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* ======== Image styling ======== */
+.personal-photo,
+.hobby-photo {
+  max-width: 300px;
+  width: 100%;
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+
+/* ======== Icon styling ======== */
+.icon {
+  width: 50px;
+  margin: 10px;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+/* ======== Footer ======== */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+}

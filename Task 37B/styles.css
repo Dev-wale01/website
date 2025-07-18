@@ -1,0 +1,75 @@
+/* ================================
+   CSS Custom Properties & @property
+=================================== */
+@property --jc {
+  syntax: "<keyword>";
+  inherits: false;
+  initial-value: center;
+}
+
+@property --ai {
+  syntax: "<keyword>";
+  inherits: false;
+  initial-value: center;
+}
+
+:root {
+  --jc: center;
+  --ai: center;
+  --gap: 20px;
+  --bg: #f0f4f8;
+  --primary: #1e88e5;
+  --item-bg: #fff;
+}
+
+/* ================================
+   Layout Base Styling
+=================================== */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg);
+  color: #333;
+}
+
+.header, .footer {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.main-content {
+  padding: 40px 20px;
+}
+
+/* ================================
+   Flex Container
+=================================== */
+.flex-container {
+  display: flex;
+  justify-content: var(--jc);
+  align-items: var(--ai);
+  gap: var(--gap);
+  flex-wrap: wrap;
+  transition: all 0.5s ease;
+}
+
+/* ================================
+   Flex Items
+=================================== */
+.flex-item {
+  background-color: var(--item-bg);
+  border: 2px solid var(--primary);
+  padding: 40px;
+  width: 200px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  transition: transform 0.3s ease;
+}
+
+.flex-item:hover {
+  transform: scale(1.05);
+}

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registration Form</title>
+</head>
+<body>
+
+  <h1>Registration Form</h1>
+
+  <!-- Registration Form -->
+  <form action="/submit" method="post">
+    
+    <!-- Full Name -->
+    <label for="fullname">Full Name:</label><br />
+    <input type="text" id="fullname" name="fullname" required /><br /><br />
+
+    <!-- Email -->
+    <label for="email">Email Address:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <!-- Password -->
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" required /><br /><br />
+
+    <!-- Gender -->
+    <label for="gender">Gender:</label><br />
+    <select id="gender" name="gender">
+      <option value="male">Male</option>
+      <option value="female">Female</option>
+      <option value="other">Other</option>
+    </select><br /><br />
+
+    <!-- Age -->
+    <label for="age">Age:</label><br />
+    <input type="number" id="age" name="age" min="0" /><br /><br />
+
+    <!-- Country -->
+    <label for="country">Country:</label><br />
+    <input type="text" id="country" name="country" /><br /><br />
+
+    <!-- Terms and Conditions -->
+    <input type="checkbox" id="terms" name="terms" required />
+    <label for="terms">I agree to the terms and conditions</label><br /><br />
+
+    <!-- Submit Button -->
+    <input type="submit" value="Register" />
+
+  </form>
+
+</body>
+</html>

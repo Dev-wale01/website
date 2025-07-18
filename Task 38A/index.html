@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 38A – Flexbox Demo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <h1>Task 38A – Flexbox Item Properties Demonstration</h1>
+
+  <!-- 1. ORDER PROPERTY DEMO -->
+  <h2>1. Order Property</h2>
+  <p>We can rearrange the visual order of flex items without changing the HTML order using the <strong>order</strong> property.</p>
+  <div class="flex-container order-demo">
+    <div class="box box1">One (order: 2)</div>
+    <div class="box box2">Two (order: 3)</div>
+    <div class="box box3">Three (order: 1)</div>
+  </div>
+
+  <!-- 2. FLEX SHRINK PROPERTY DEMO -->
+  <h2>2. Flex Shrink Property</h2>
+  <p>This demo shows how one item is allowed to shrink, while the other is not. Resize the browser to see the effect.</p>
+  <div class="flex-container shrink-demo">
+    <div class="item no-shrink">No Shrink (flex-shrink: 0)</div>
+    <div class="item shrink">Shrink (flex-shrink: 1)</div>
+  </div>
+
+  <!-- 3. ALIGN-SELF PROPERTY DEMO -->
+  <h2>3. Align-Self Property</h2>
+  <p>The <strong>align-self</strong> property overrides the container's cross-axis alignment for individual items.</p>
+  <div class="flex-container align-demo">
+    <div class="box box1">Top</div>
+    <div class="box box2">Center (align-self)</div>
+    <div class="box box3">Top</div>
+  </div>
+
+  <!-- 4. MAX-WIDTH RESPONSIVENESS DEMO -->
+  <h2>4. Max-Width for Responsive Layout</h2>
+  <p>Using <strong>max-width</strong> helps prevent content from stretching too wide. Resize to test responsiveness.</p>
+  <div class="responsive-box">
+    This container has <strong>max-width: 600px</strong>. On smaller screens, it shrinks but doesn't overflow on large ones.
+  </div>
+
+</body>
+</html>

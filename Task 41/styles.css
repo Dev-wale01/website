@@ -1,0 +1,144 @@
+/* 
+  TASK 41A – CSS Grid Gallery
+  ----------------------------
+  Objective:
+  Build a responsive image gallery using CSS Grid, 
+  image hover effects, and media queries for layout 
+  adjustment on smaller screens.
+*/
+
+/* 
+  GLOBAL RESET
+  ---------------------------------
+  Reset default spacing and use consistent box sizing
+  to make layout calculations predictable across browsers.
+*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 
+  PAGE TITLE STYLING
+  ---------------------------------
+  Styles the main heading with center alignment and 
+  vertical padding for spacing.
+*/
+h1 {
+  text-align: center;
+  padding-block: 40px;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* 
+  GRID CONTAINER STYLING
+  ---------------------------------
+  - Defines a responsive layout using CSS Grid.
+  - 'auto-fit' fills as many columns as possible.
+  - 'minmax(250px, 1fr)' ensures each item is at least 250px wide.
+  - 'grid-auto-flow: dense' packs items tightly to fill gaps.
+  - 'grid-auto-rows: 220px' sets a base height for each row.
+*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-auto-flow: dense;
+  gap: 15px;
+  grid-auto-rows: 220px;
+}
+
+/* 
+  INDIVIDUAL ITEM STYLING
+  ---------------------------------
+  - Each grid item has rounded corners and smooth scaling on hover.
+  - Overflow is hidden to clip image edges cleanly.
+  - A fallback background is added in case images fail to load.
+  - A subtle box-shadow improves visual hierarchy.
+*/
+.item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 15px;
+  transition: transform 0.3s ease-in-out;
+  cursor: pointer;
+  background-color: #f0f0f0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* 
+  IMAGE INSIDE ITEM
+  ---------------------------------
+  - Fills the entire grid area without distortion using object-fit: cover.
+  - GPU-accelerated settings improve hover animation smoothness.
+*/
+.item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+/* 
+  HOVER EFFECT
+  ---------------------------------
+  - Slight zoom effect (scale up by 3%) when the user hovers over an image.
+*/
+.item:hover {
+  transform: scale(1.03);
+}
+
+/* 
+  SPAN CLASSES
+  ---------------------------------
+  - These classes customize the layout of some items to create variation.
+  - .long spans 2 row units (taller image).
+  - .wide spans 2 column units (wider image).
+  - .square spans both 2 rows and 2 columns (big block).
+*/
+.long {
+  grid-row: span 2;
+}
+
+.wide {
+  grid-column: span 2;
+}
+
+.square {
+  grid-area: span 2 / span 2;
+}
+
+/* 
+  RESPONSIVE DESIGN – Tablet & Mobile
+  ---------------------------------
+  - On smaller screens (under 768px), we reset all spans to 1 to simplify the layout.
+  - Prevents items from becoming too dominant or out of alignment.
+*/
+@media (max-width: 768px) {
+  .long {
+    grid-row: span 1;
+  }
+
+  .wide {
+    grid-column: span 1;
+  }
+
+  .square {
+    grid-area: span 1 / span 1;
+  }
+}
+
+/* 
+  MICRO-SCREEN SUPPORT – Very Small Devices
+  ---------------------------------
+  - On extremely small screens (like old phones), disable the zoom hover effect entirely.
+*/
+@media (max-width: 300px) {
+  .item:hover {
+    transform: scale(1);
+  }
+}

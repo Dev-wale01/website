@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Favorite Books</title>
+
+  <!-- Inline CSS for simple styling -->
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      padding: 20px;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+
+    ul {
+      margin: 10px 0 10px 20px;
+    }
+
+    ol {
+      margin-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    strong {
+      color: #1a73e8;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Page Title -->
+  <h1>📚 My Favorite Books</h1>
+
+  <!-- Main Genre List -->
+  <ul>
+    <li><strong>Fiction</strong>
+      <ul>
+        <li>To Kill a Mockingbird (Harper Lee)
+          <ol>
+            <li>Racism and Injustice</li>
+            <li>Childhood and Growth</li>
+            <li>Moral Development</li>
+          </ol>
+        </li>
+        <li>The Great Gatsby (F. Scott Fitzgerald)
+          <ol>
+            <li>The American Dream</li>
+            <li>Wealth and Excess</li>
+            <li>Love and Betrayal</li>
+          </ol>
+        </li>
+        <li>1984 (George Orwell)
+          <ol>
+            <li>Totalitarianism</li>
+            <li>Surveillance</li>
+            <li>Freedom of Thought</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Non-Fiction</strong>
+      <ul>
+        <li>Sapiens (Yuval Noah Harari)
+          <ol>
+            <li>Human Evolution</li>
+            <li>Cognitive Revolution</li>
+            <li>Historical Impact</li>
+          </ol>
+        </li>
+        <li>Educated (Tara Westover)
+          <ol>
+            <li>Self-Education</li>
+            <li>Family and Conflict</li>
+            <li>Freedom and Identity</li>
+          </ol>
+        </li>
+        <li>Becoming (Michelle Obama)
+          <ol>
+            <li>Personal Growth</li>
+            <li>Overcoming Challenges</li>
+            <li>Leadership and Purpose</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+
+    <li><strong>Science Fiction</strong>
+      <ul>
+        <li>Dune (Frank Herbert)
+          <ol>
+            <li>Politics and Religion</li>
+            <li>Ecology</li>
+            <li>Destiny and Power</li>
+          </ol>
+        </li>
+        <li>Ender's Game (Orson Scott Card)
+          <ol>
+            <li>Warfare Strategy</li>
+            <li>Child Soldiers</li>
+            <li>Morality and Empathy</li>
+          </ol>
+        </li>
+        <li>Neuromancer (William Gibson)
+          <ol>
+            <li>Cyberpunk Technology</li>
+            <li>Artificial Intelligence</li>
+            <li>Corporate Power</li>
+          </ol>
+        </li>
+      </ul>
+    </li>
+  </ul>
+
+</body>
+</html>

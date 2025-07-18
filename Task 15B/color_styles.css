@@ -1,0 +1,66 @@
+/*
+  Reflective Notes:
+  - Hex codes are compact and commonly used in design tools. They offer solid color control but no built-in opacity.
+  - RGB and RGBA allow fine control of red, green, and blue values with optional alpha for transparency.
+  - HSL/HSLA lets you adjust colors by hue, saturation, and lightness, making them more intuitive for designers.
+  - Opacity with RGBA and HSLA allows for layering effects and better control over visual depth.
+*/
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  padding: 30px;
+}
+
+h1 {
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.box {
+  width: 300px;
+  height: 300px;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  color: white;
+}
+
+/* Box 1: HEX background, RGB text */
+.hex-box {
+  background-color: #1abc9c; /* Hex format */
+}
+
+.hex-box h2 {
+  color: rgb(255, 255, 255); /* RGB white */
+}
+
+.hex-box p {
+  color: rgb(200, 255, 255); /* Light blue */
+}
+
+/* Box 2: RGB background, HSL text */
+.rgb-box {
+  background-color: rgb(52, 152, 219); /* RGB format */
+}
+
+.rgb-box h2 {
+  color: hsl(0, 0%, 100%); /* White */
+}
+
+.rgb-box p {
+  color: hsl(210, 100%, 85%); /* Soft blue */
+}
+
+/* Box 3: HSLA background with opacity, RGBA text */
+.hsl-box {
+  background-color: hsla(340, 100%, 50%, 0.8); /* HSLA: semi-transparent red-pink */
+}
+
+.hsl-box h2 {
+  color: rgba(255, 255, 255, 1); /* Solid white */
+}
+
+.hsl-box p {
+  color: rgba(255, 255, 255, 0.7); /* Transparent white */
+}

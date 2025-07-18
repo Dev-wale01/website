@@ -1,0 +1,96 @@
+<!--
+  TASK 41A - CSS GRID GALLERY 
+  -----------------------------------
+  Objective:
+  Recreate and demonstrate a responsive image 
+  gallery using CSS Grid layout and media queries.
+
+  Key Features:
+  - Responsive grid using auto-fit/minmax
+  - Items that span rows/columns (wide, long, square)
+  - Clean layout flow using strategic arrangement
+  - Media query fallback for mobile
+  - Image fill with object-fit: cover
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Responsive CSS Grid Gallery</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <h1>Responsive CSS Grid Gallery</h1>
+
+  <div class="container">
+
+    <!-- Strong visual start -->
+    <div class="item wide">
+      <img src="images/image1.jpg" alt="Gallery Image 1">
+    </div>
+
+    <div class="item">
+      <img src="images/image2.jpg" alt="Gallery Image 2">
+    </div>
+
+    <div class="item long">
+      <img src="images/image3.jpg" alt="Gallery Image 3">
+    </div>
+
+    <div class="item">
+      <img src="images/image4.jpg" alt="Gallery Image 4">
+    </div>
+
+    <!-- Square centerpiece -->
+    <div class="item square">
+      <img src="images/image5.jpg" alt="Gallery Image 5">
+    </div>
+
+    <div class="item">
+      <img src="images/image6.jpg" alt="Gallery Image 6">
+    </div>
+
+    <div class="item wide">
+      <img src="images/image7.jpg" alt="Gallery Image 7">
+    </div>
+
+    <div class="item">
+      <img src="images/image8.jpg" alt="Gallery Image 8">
+    </div>
+
+    <div class="item long">
+      <img src="images/image9.jpg" alt="Gallery Image 9">
+    </div>
+
+    <div class="item">
+      <img src="images/image10.jpg" alt="Gallery Image 10">
+    </div>
+
+    <div class="item wide">
+      <img src="images/image11.jpg" alt="Gallery Image 11">
+    </div>
+
+    <div class="item">
+      <img src="images/image12.jpeg" alt="Gallery Image 12">
+    </div>
+
+    <div class="item long">
+      <img src="images/image13.jpg" alt="Gallery Image 13">
+    </div>
+
+    <div class="item">
+      <img src="images/image14.jpeg" alt="Gallery Image 14">
+    </div>
+
+    <!-- Strong square ending -->
+    <div class="item square">
+      <img src="images/image15.jpeg" alt="Gallery Image 15">
+    </div>
+
+  </div>
+
+</body>
+</html>
