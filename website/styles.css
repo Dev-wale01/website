@@ -1,0 +1,842 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: 1.3;
+    
+}
+html{
+  cursor: pointer;
+}
+body{
+    font-family: "Roboto", sans-serif;
+    max-width: 100%;
+}
+div span{
+    font-weight: 450;
+}
+.header{
+    position: absolute;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px   0px 0px 1px;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    padding-inline: 15px;
+    padding-block: 8px;
+    
+}
+.doordash-logo{
+    height: 52px;
+    width: 20px;
+    padding: 3px;
+}
+.doordash-logo img{
+  width: 170px;
+  top: -20px;
+  position: absolute;
+}
+.sign-in-out a{
+    text-decoration: none;
+}
+.signin a{
+    color: white;
+    background-color: #eb1700;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 10px 13px;
+    border-radius: 50px;
+    position: absolute;
+    top: 18px;
+    right: 100px;
+}
+.signin a:hover{
+    background-color: #d91400ff;
+}
+.signup a{
+    background-color: #ffffff;
+    color: #606060;
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 50px;
+    position: absolute;
+    top: 18px;
+    right: -5px
+}
+.background-container{
+    background: url("https://i.postimg.cc/8CbsbZGP/doordash-upper-img.png") no-repeat  scroll center center;
+    background-size: cover;
+    height: 650px;
+    position: relative;
+}
+.background-container h1{
+    color: #ffffff;
+    position: absolute;
+    top: 38%;
+    width: 100%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+.input-container{
+    background-color: white;
+    width: 375px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%);
+    padding: 8px 0;
+    border-radius: 30px;
+}
+.input-container:active{
+    border: 2px solid rgba(0, 0, 239, 0.929);
+}
+input{
+    outline: none;
+    width: 290px;
+    height: 40px;
+    font-size: 16px;
+    padding-inline: 0.5rem;
+    background: transparent;
+    border: none;
+    color: gray;
+
+}
+i{
+    color: black;
+}
+.fa-location-dot{
+    padding-left: 15px;
+    font-size: 19px;
+}
+.input-container .fa-arrow-right{
+    background-color: #eb1700;
+    color: white;
+    font-size: 1.1rem;
+    padding: 0.7em;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.address{
+    background-color: white;
+    width: 240px;
+    padding: 6px;
+    border-radius: 30px;
+    text-align: center;
+    position: absolute;
+    top: 62%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.address a{
+    font-weight: bold;
+   text-decoration: none;
+    color: black;
+}
+.second-section{
+    position: relative;
+    height: 580px;
+}
+.second-section img{
+    height: 125px;
+    width: 125px;
+   
+}
+.second-section h2{
+    font-size: 32px;
+    font-weight: bolder;
+}
+.second-section h3{
+    font-weight: 450;
+}
+.second-section i{
+    color: #eb1700;
+    margin: 5px;
+}
+.div1, .div2, .div3{
+    position: absolute;
+    top: 20%;
+    width: 216px;
+    height: 402px;
+    padding: 20px 0;
+} 
+.div1{
+    left: 160px;
+}
+.div2{
+    right: 500px;  
+}
+.div3{
+    right: 130px;
+}
+.s2{
+    color: #eb1700;
+    font-weight: bold;
+}
+.third-section{
+    text-align: left;
+    color: #191919;
+    height: 550px;
+    position: relative;
+}
+.crave-delivered{
+    width: 400px;
+    height: 290px;
+    padding: 25px;
+    position: absolute;
+    top: 110px;
+    left: 40px;
+}
+.crave-delivered h2{
+    font-size: 40px;
+    margin: 20px 0px 0px;
+}
+.find-res-button{
+    position: relative;
+}
+.find-res-button a{
+    text-decoration: none;
+    color: white;
+    background-color: #eb1700;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+    top: 25px;
+}
+.find-res-button a:hover{
+    background-color: #d91400ff;
+}
+.pizza{
+    position: relative;
+}
+.pizza img{
+    position: absolute;
+    top: 40px;
+    left: 500px;
+    z-index: 1;
+}
+.fourth-section{
+    background-color: #fef1ee;
+    height: 604px;
+    position: relative;
+}
+.s4 img{
+    width: 702px;
+    height: 484px;
+    position: absolute;
+    top: 80px;
+    left: 35px;
+}
+.get-dashpass-div{
+    width: 400px;
+    height: 256px;
+    padding: 2px;
+    margin: 30px;
+    text-align: left;
+    position: absolute;
+    right: 0;
+    top: 130px;
+}
+.get-dashpass-div h2{
+    font-size: 40px;
+    margin-top: 10px;
+}
+.get-dashpass-div span{
+    margin-top: 10px;
+}
+.s4-2 a{
+    text-decoration: none;
+    color: white;
+    background-color: #eb1700;
+    padding: 10px;
+    font-weight: bold;
+    border-radius: 50px;
+    position: absolute;
+    bottom: 0;
+}
+.s4-2 a:hover{
+    background-color: #d91400ff;;
+}
+.fifth-section{
+    background-color: rgba(30, 30, 30, 0.6);
+    background: url("https://i.postimg.cc/3x5R5sJx/grocery-desktop-background-3.png") no-repeat scroll center center;
+    background-size: cover;
+    color: white;
+    height: 605px;
+    position: relative;
+}
+.background-color{
+    background-color: rgba(30, 30, 30, 0.6);
+    height: 605px;
+  
+}
+.shop-grocery{
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+}
+.fs1{
+    font-size: 40px;
+    margin: 20px 0 0;
+    text-align: center;
+}
+.fs2{
+    font-size: 19px;
+    text-align: center;
+    margin: 20px 0 0;
+}
+.fs3{
+    font-size: 16px;
+    text-align: center;
+    margin: 10px 0 0;
+    
+}
+.fs4 a{
+    text-decoration: none;
+    color: white;
+    background-color: #eb1700;
+    padding: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+}
+.fs4 a:hover{
+    background-color: #d91400ff;
+}
+.shop-grocery-button{
+   border: none;
+   background-color: #eb1700;
+   color: #ffffff;
+   padding: 10px 12px;
+   border-radius: 50px;
+   font-size: 14px;
+   font-weight: bold;
+   position: absolute;
+   left: 50%;
+   transform: translate(-50%);
+}
+.shop-grocery-button:hover{
+    background-color: #d91400ff;
+}
+.sixth-section{
+    height: 550px;
+    position: relative;
+}
+.shop-now{
+    margin: 20px 0 0;
+    width: 375px;
+    height: 274px;
+    position: absolute;
+    top: 195px;
+    left: 30px;
+}
+.shop-now h2{
+    font-size: 36px;
+    margin: 20px 0px 0px;
+}
+.shop-now-a{
+    position: relative;
+}
+.shop-now-a button{
+    text-decoration: none;
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    background-color: #eb1700;
+    padding: 10px 15px;
+    border-radius: 50px;
+    position: absolute;
+    top: 410px;
+    left: 30px;
+}
+.shop-now-a button:hover{
+    background-color: #d91400ff;
+}
+.shop-now-img {
+    position: relative;
+    
+}
+.shop-now-img img{
+    position: absolute;
+    left: 485px;
+    top: 50px;
+}
+.seventh-section{
+    background: #fef1ee;
+    height: 1800px;
+}
+.seventh-section h2{
+    word-spacing: 2px;
+    letter-spacing: 2px;
+}
+.image-box{
+    display: inline-block;
+    position: relative;
+}
+.seventh-section h2{
+    font-size: 32px;
+    font-weight: bolder;
+    text-align: center;
+    padding: 60px;  
+}
+.image-box{
+    position: relative;
+}
+.image1{
+    position: absolute;
+    left: 10px;
+    top: 0;
+}
+.image2{
+    position: absolute;
+    top: 0px;
+    left: 650px;
+}
+.image3, .image4{
+    position: absolute;
+    top: 790px;
+}
+.image3{
+    left: 10px;
+}
+.image4{
+    left: 650px;
+}
+.pickup-button button, .flower-button button, .shop-button button, .pet-button button{
+    background-color: #eb1700;
+    color: white;
+    padding: 10px;
+    border-style: none;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+}
+.pickup-button button:hover, .flower-button button:hover, .pet-button button:hover{
+    background-color: #d91400ff;
+}
+.item-div1{
+    position: absolute;
+    top: 300px;
+    width: 450px;
+}
+.item-div1 h2{
+    font-size: 32px;
+    position: absolute;
+    top: 200px;
+}
+.item-div1 p{
+    position: absolute;
+    top: 350px;
+    left: 15px;
+}
+.pickup-button button{
+    top: 420px;
+    left: 30%;
+}
+.item-div2{
+    height: 150px;
+    width: 450px;
+    padding: 20px;
+}
+.item-div2 h2{
+    font-size: 32px;
+    position: absolute;
+    top: 500px;
+    font-size: 32px;
+}
+.item-div2 span{
+    position: absolute;
+    top: 610px;
+    left: 15px;
+}
+.flower-button button{
+    top: 660px;
+    left: 30%;
+}
+.item-div3, .item-div4{
+    height: 150px;
+    width: 450px;
+}
+.item-div3 h2{
+    font-size: 32px;
+    position: absolute;
+    top: 490px;
+    font-size: 36px;
+}
+.item-div3 span{
+    position: absolute;
+    top: 610px;
+    left: 15px;
+}
+.shop-button button{
+    position: absolute;
+    bottom: -50px;
+    left: 30%;
+}
+.shop-button ~ p{
+    position: absolute;
+    left: 120px;
+    bottom: -100px;
+}
+.item-div4 h2{
+    font-size: 32px;
+    position: absolute;
+    top: 490px;
+    font-size: 36px;
+}
+.item-div4 span{
+    position: absolute;
+    bottom: -40px;
+    left: 10px;
+}
+.pet-button button{
+    bottom: -100px;
+    left: 27%;
+}
+.Try-Package-Pickup{
+    border-style: none;
+}
+.eigth-section{
+    position: relative;
+    height: 650px;
+}
+#dasher{
+    position: absolute;
+    top: 30px;
+    left: 30%;
+    margin: 30px;
+    font-size: 32px;
+    width: 400px;
+}
+.dash-get-paid {
+    padding: 20px 0 0;
+    width: 400px;
+    height: 256px;
+    position: absolute;
+    top: 260px;
+    left: 10px;
+    margin: 10px;
+    text-align: center;
+}
+.dash-get-paid h2{
+    font-size: 32px;
+}
+.dash-get-paid span{
+    width: 200px;
+}
+.become-a-dasher button{
+    border-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    background-color: #eb1700;
+    padding: 10px;
+    border-radius: 45px;
+    position: absolute;
+    top: 210px;
+    left: 18px;
+}
+.become-a-dasher a{
+    position: absolute;
+    top: 220px;
+    left: 130px;
+}
+.become-a-dasher-img img{
+    position: absolute;
+    left: 500px;
+    top: 170px;
+    z-index: 1;
+    width: 700px
+}
+.ninth-section{
+    background-color: #fef1ee;
+    height: 604px;
+    position: relative;
+}
+.ninth-section-img img{
+    width: 702px;
+    height: 484px;
+    position: absolute;
+    top: 80px;
+    left: 35px;
+}
+.grow-your-business{
+    width: 400px;
+    height: 256px;
+    padding: 2px;
+    margin: 30px;
+    text-align: left;
+    position: absolute;
+    top: 180px;
+    right: 0;
+}
+.grow-your-business h2{
+    font-size: 32px;
+}
+.partner a{
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #eb1700;
+ 
+    padding: 10px;
+    border-radius: 40px;
+    position: absolute;
+    top: 180px;
+    font-weight: bold;
+}
+.tenth-section{
+    height: 400px;
+    position: relative;
+}
+.top-cities, .top-cuisines, .top-chains{
+    position: absolute;
+    bottom: 310px;
+}
+.top-cities{
+    left: 140px;
+}
+.top-cuisines{
+    right: 50%;
+}
+.top-chains{
+
+    right: 140px;
+}
+.h4{
+    color: gray;
+}
+.tenth-section h2{
+    text-align: center;
+    margin: 50px;
+    font-size: 32px;
+}
+.list-div{
+    position: relative;
+}
+li{
+    list-style-type: none;
+    font-weight: 450;
+}
+.list1, .list2, .list3, .list4{
+    position: absolute;
+    bottom: 180px;
+   cursor: pointer;
+}
+.list1 li:hover, .list2 li:hover, .list3 li:hover, .list4 li:hover{
+    text-decoration: underline;
+    text-decoration-color: #c4c4c4;
+}
+.list1{
+    left: 70px;
+}
+.list2{
+    left: 380px;
+}
+.list3{
+    right: 540px;
+}
+.list4{
+    left: 78%;
+    padding: 15px
+}
+.see-more-container{
+    position: absolute;
+    top: 64%;
+    right: 45%;
+}
+.see-more-container span{
+    font-weight: 700;
+    font-size: 1.1em;
+}
+.fa-chevron-down{
+    background-color: #f2f2f2;
+    padding: 23px 14px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.fa-chevron-down:hover{
+    opacity: 0.6;
+}
+.eleventh-section{
+    background-color: black;
+    color: white;
+    height: 800px;
+    width: 100%;
+    position: relative;
+}
+.eleventh-section .cate{
+    position: absolute;
+    top: 15px;
+    left: 50px;
+    margin: 10px;
+}
+#list1, #list2, #list3, #list4, #List5, #list6, #list7{
+    position: absolute;
+    top: 70px;
+    font-size: 15px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+.list-container li:hover{
+    text-decoration: underline;
+}
+#list1{
+    left: 5%;
+}
+#list2{
+    left: 25%;
+}
+#list3{
+    left: 50%;
+}
+#list4{
+    left: 75%;
+}
+#list5, #list6, #list7{
+    position: absolute;
+    top: 350px;
+    
+}
+.get, .let, .doing{
+    position: absolute;
+    top: 300px;
+}
+.get{
+    left: 60px;
+}
+#list5{
+    left: 70px;
+    color: #c4c4c4;
+    cursor: pointer;
+}
+.let, #list6{
+    left: 300px;
+}
+.doing {
+    right: 50%;
+}
+#list7{
+    right: 45%;
+}
+.footer footer{
+    position: absolute;
+    bottom: 30px;
+    left: 100px;
+}
+.footer a{
+    text-decoration: none;
+    margin: 10px;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+}
+.footer a:hover{
+    text-decoration: underline;
+}
+.footer img{
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    bottom: 15px;
+    left: 50px;
+}
+.fa-facebook, .fa-x-twitter, .fa-instagram{
+    position: absolute;
+    cursor: pointer;
+    bottom: 40px;
+}
+.fa-facebook{
+    right: 140px;
+}
+.fa-x-twitter{
+    right: 110px;
+}
+.fa-instagram{
+    right: 80px;
+}
+.english{
+    position: relative;
+    width: 200px;
+    right: 10px;
+    top: 30px;
+    border-radius: 50px;
+    position: relative;
+    padding: 10px;
+}
+.dropdown{
+    font-size: 0.9em;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 7px 0 7px 20px;
+    height: 37px;
+	background-color: #fff;
+	background-image: url( 'https://i.postimg.cc/L6LnQ9Bs/globe.png' );
+	background-repeat: no-repeat;
+	background-size: 1em auto;
+	background-position: 0.4em center;
+	color: rgb(5, 5, 5);
+ }
+ .english .dropdown{
+    position: absolute;
+    right: -759px;
+    bottom: -726px;
+ }
+.store-badge{
+    padding: 32px 0 0;
+    position: relative;
+ }
+.apple-store, .google-store{
+    padding: 18px 10px;
+    background-color: #606060;
+    width: 170px;
+    border-radius: 10px;
+    margin: 10px;
+    margin-inline: 4px;
+}
+.google-store a, .apple-store a{
+    text-decoration: none;
+    color: #c4c4c4;
+}
+.google-store i, .apple-store i{
+    position: absolute;
+    left: 13px;
+    padding: 7px;
+}
+.small1{
+    font-size: 15px;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+}
+.big1{
+    font-size: 24.5px;
+    position: absolute;
+    left: 50px;
+    top: 60px;
+}
+.small{
+    font-size: 7px;
+    position: absolute;
+    left: 57px;
+    bottom: 40px;
+}
+.big{
+    font-size: 20.5px;
+    position: absolute;
+    left: 55px;
+    bottom: 19px;
+    font-weight: 400;
+}
+.store-badge, a i span{
+    position: absolute;
+    right: 60px;
+    top: 250px;
+}
+
+
